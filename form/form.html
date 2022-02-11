@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1><center>Registration Form</center></h1>
+    <form action="/action_page.php" target="_blank" method="get">
+      <!-- input field colors -->
+      <label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor" />
+      <fieldset>
+        <legend>Personal Data:</legend>
+        <!-- text Fields -->
+        <label for="fname"> First Name: </label>
+        <input type="text" id="fname" name="fname" /> <br />
+        <label for="lname"> Last Name: </label>
+        <input type="text" id="lname" name="lname" /> <br />
+        <label for="birthday">Birthday: </label>
+        <input type="date" id="birthday" name="birthday" /> <br />
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" /> <br />
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile" />
+      </fieldset>
+
+      <!-- Radio Buttons -->
+      <p>Select your favorite language:</p>
+      <input type="radio" id="C" name="FavLanguage" value="C" />
+      <label for="C"> C </label> <br />
+      <input type="radio" id="C++" name="FavLanguage" value="C++" />
+      <label for="C++"> C++ </label> <br />
+      <input type="radio" id="Python" name="FavLanguage" value="Python" />
+      <label for="Python"> Python </label> <br />
+      <input type="radio" id="HTML" name="FavLanguage" value="HTML" />
+      <label for="HTML"> HTML </label> <br />
+      <input type="radio" id="CSS" name="FavLanguage" value="CSS" />
+      <label for="CSS"> CSS </label> <br />
+
+      <!-- Checkboxes -->
+      <p>Select your choice(s):</p>
+      <input
+        type="checkbox"
+        id="choice1"
+        name="choice1"
+        value="Competitive Programming"
+      />
+      <label for="choice1"> Competitive Programming </label> <br />
+      <input type="checkbox" id="choice2" name="choice2" value="Basic Coding" />
+      <label for="choice2"> Basic Coding </label> <br />
+      <input
+        type="checkbox"
+        id="choice3"
+        name="choice3"
+        value="Web Development"
+      />
+      <label for="choice3"> Web Development </label> <br />
+
+      <!-- Select drop down -->
+      <label for="Education"> Choose your highest education:</label>
+      <select name="Education" id="Education">
+        <option value="Primary">Primary</option>
+        <option value="Secondary" selected>Secondary</option>
+        <option value="Higher Secondary">Higher Secondary</option>
+        <option value="Graduation">Graduation</option>
+        <option value="Master">Master</option>
+        <option value="Ph.D.">Ph.D.</option>
+      </select>
+      <br />
+
+      <!-- Visible Values -->
+      <label for="cuisine"> Choose a cuisine:</label>
+      <select name="cuisine" id="cuisine" size="4" multiple>
+        <option value="Indian">Indian</option>
+        <option value="Italian">Italian</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Japanese">Japanese</option>
+        <option value="Mexican">Mexican</option>
+      </select>
+      <br />
+
+      <!-- Data List -->
+      <p>What search engine do you use?</p>
+      <input list="browsers" />
+      <datalist id="browsers">
+        <option value="Internet Explorer"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+      <br />
+
+      <!-- password -->
+      <label for="username">Username: </label>
+      <input type="text" id="username" name="username" /> <br />
+      <label for="pwd">Password: </label>
+      <input type="password" id="pwd" name="pwd" /> <br />
+
+      <!-- textarea -->
+      <p>Type a message...</p>
+      <textarea name="message" id="message" cols="30" rows="10"> </textarea>
+      <br />
+
+      <!-- button -->
+      <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+      <br />
+
+      <!-- reset the values to default -->
+      <input type="reset" />
+
+      <!-- submit button -->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
