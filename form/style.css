@@ -1,3 +1,8 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  align-content: center;
+}
+
 body {
   background-color: lightblue;
 }
@@ -10,4 +15,8 @@ h1 {
 p {
   font-family: verdana;
   font-size: 20px;
+}
+
+a {
+  text-decoration: none;
 }
