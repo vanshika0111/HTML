@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    text-align: center;
+  }
+  div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+  } 
+  img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+  div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+  }
+</style>
+</head>
+<body>
+  <h1>Positioning Practical</h1>
+  <img src="qwerty.jpg">
+  <p> The position property specifies the type of positioning method used for an element</p>
+  <h2>Position: relative, absolute & z-index;</h2>
+  <p>An element with position: relative; is positioned relative to its normal position.<br>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):<br>When elements are positioned, they can overlap other elements.</p>
+  <div class="relative">This div element has position: relative;
+    <div class="absolute">This div element has position: absolute;</div>
+  </div>
+</body>
+</html>
